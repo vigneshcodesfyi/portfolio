@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./Education.css";
 const company = [
   {
     id: 1,

@@ -1,7 +1,7 @@
 import React from "react";
-import picture from "./vicky.jpg"; // Your image path
 import "./Education.css";
-
+import resume from "./Resume_vignesh.pdf";
+import "./Education.css";
 const HeroSection = () => {
   return (
     <div
@@ -26,14 +26,14 @@ const HeroSection = () => {
 
         <div className="flex space-x-4 justify-center lg:justify-start">
           <a
-            href="/path/to/your/resume.pdf" // Change this to your resume path
+            href={resume}
             className="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition duration-300"
             download
           >
             Download Resume
           </a>
           <a
-            href="mailto:your-email@example.com" // Change this to your email
+            href="mailto:vigneshcodesfyi@gmail.com" // Change this to your email
             className="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition duration-300"
           >
             Contact Me

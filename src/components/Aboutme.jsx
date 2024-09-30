@@ -1,7 +1,7 @@
 import React from "react";
 import profileImage from "./vicky.png"; // Your image path
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa"; // Importing email icon
-
+import "./Education.css";
 const AboutMe = () => {
   return (
     <div className=" flex flex-col   lg:flex-row items-center md:items-center p-10 md:space-y-0 md:space-x-8  lg:pt-10 lg:pb-10 lg:h-[60vh]  sm:h-[80vh] border-8 bg-gray-300">
@@ -25,7 +25,7 @@ const AboutMe = () => {
         <div className="flex justify-center md:justify-start space-x-6">
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/vignesh-s-9b4626229/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-red-600 transition-transform transform hover:scale-125 "
@@ -35,7 +35,7 @@ const AboutMe = () => {
 
           {/* GitHub */}
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/vigneshcodesfyi"
             target="_blank"
             rel="noopener noreferrer"
             className="text-black hover:text-red-600 transition-transform transform hover:scale-125 "
@@ -44,18 +44,10 @@ const AboutMe = () => {
           </a>
 
           {/* Twitter */}
-          <a
-            href="https://twitter.com/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:text-red-600 transition-transform transform hover:scale-125 "
-          >
-            <FaTwitter size={40} />
-          </a>
 
           {/* Email */}
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:vigneshcodesfyi@gmail.com"
             className="text-red-500 hover:text-red-600 transition-transform transform hover:scale-125 "
           >
             <FaEnvelope size={40} />

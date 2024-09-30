@@ -73,7 +73,7 @@ const ProjectsGallery = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer" // This is a good practice for security
-                  className="bg-teal-500 text-white py-2 px-6 rounded-full text-lg font-bold hover:bg-teal-600 transition duration-300"
+                  className="bg-red-500 text-white py-2 px-6 rounded-full text-lg font-bold hover:bg-red-500 transition duration-300"
                 >
                   View Project
                 </a>

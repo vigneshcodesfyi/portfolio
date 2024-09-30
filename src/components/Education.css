@@ -82,3 +82,6 @@ footer form:hover {
 html {
   scroll-behavior: smooth;
 }
+* {
+  font-family: "Times New Roman", Times, serif;
+}
