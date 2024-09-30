@@ -43,6 +43,12 @@ const projects = [
     description: "A website dedicated to coffee products.",
     link: "https://vigneshcodesfyi.github.io/Senchola_product_website/",
   },
+  {
+    id: 8,
+    name: "HTML CSS JS portfolio",
+    description: "A practice website for portfolio using HTML-CSS-JS.",
+    link: "https://vigneshcodesfyi.github.io/Portfolio-/",
+  },
 ];
 
 const ProjectsGallery = () => {

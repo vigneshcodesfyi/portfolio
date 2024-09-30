@@ -78,3 +78,7 @@ footer form:hover {
     bottom: 0;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

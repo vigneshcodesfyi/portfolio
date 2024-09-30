@@ -18,12 +18,22 @@ function App() {
       }}
     >
       <Navbar />
-      <HeroSection />
-      <AboutMe />
+      <div id="home">
+        <HeroSection />
+      </div>
+      <div id="aboutme">
+        <AboutMe />
+      </div>
       <Education />
-      <SkillsSection />
+      <div id="skillssection">
+        <SkillsSection />
+      </div>
+
       <Experience />
-      <ProjectsGallery />
+      <div id="projects">
+        <ProjectsGallery />
+      </div>
+
       <Footer />
     </div>
   );

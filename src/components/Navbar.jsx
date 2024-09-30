@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
+import "./Education.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
 
@@ -18,22 +19,22 @@ const Navbar = () => {
 
         <ul className={`hidden md:flex space-x-16 font-bold`}>
           <li>
-            <a href="#" className="text-white hover:text-red-600">
+            <a href="#home" className="text-white hover:text-red-600">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="text-white hover:text-red-600">
+            <a href="#projects" className="text-white hover:text-red-600">
               Projects
             </a>
           </li>
           <li>
-            <a href="#" className="text-white hover:text-red-600">
+            <a href="#skillssection" className="text-white hover:text-red-600">
               Skills
             </a>
           </li>
           <li>
-            <a href="#" className="text-white hover:text-red-600">
+            <a href="#aboutme" className="text-white hover:text-red-600">
               About Me
             </a>
           </li>
@@ -43,7 +44,7 @@ const Navbar = () => {
           <ul className="absolute top-16 left-0 right-0 bg-gray-100 flex flex-col space-y-4 md:hidden">
             <li>
               <a
-                href="#"
+                href="#home"
                 className="block text-black hover:bg-red-400 hover:text-black p-2"
               >
                 Home
@@ -51,7 +52,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#projects"
                 className="block text-black hover:bg-red-400 hover:text-black p-2"
               >
                 Projects
@@ -59,7 +60,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#skillssection"
                 className="block text-black hover:bg-red-400 hover:text-black p-2"
               >
                 Skills
@@ -67,7 +68,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#aboutme"
                 className="block text-black hover:bg-red-400 hover:text-black p-2"
               >
                 About Me
