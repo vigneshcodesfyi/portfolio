@@ -43,20 +43,14 @@ const SkillsTimeline = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const index = cardRefs.current.indexOf(entry.target); // Find the index of the current entry
           if (entry.isIntersecting) {
-            if (index % 2 === 0) {
-              entry.target.classList.add("animate-slide-right");
-            } else {
-              entry.target.classList.add("animate-slide-left");
-            }
+            entry.target.classList.add("animate-slide-in");
           } else {
-            entry.target.classList.remove("animate-slide-right");
-            entry.target.classList.remove("animate-slide-left");
+            entry.target.classList.remove("animate-slide-in");
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.5 }
     );
 
     cardRefs.current.forEach((ref) => {
@@ -78,13 +72,13 @@ const SkillsTimeline = () => {
           <div
             key={index}
             ref={(el) => (cardRefs.current[index] = el)}
-            className={`mb-2 flex ${
-              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            className={`mb-4 flex flex-col md:flex-row ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             } items-center opacity-0 transform transition duration-700 ease-out`}
             data-direction={index % 2 === 0 ? "left" : "right"}
           >
-            <div className="bg-transparent p-4 rounded-lg shadow-lg w-64 md:w-96 border-2 text-white shadow-md shadow-white hover:scale-110  hover:bg-white hover:text-black">
-              <div className="flex items-center pl-10 text-center w-64">
+            <div className="bg-transparent p-4 rounded-lg shadow-lg w-full md:w-80 border-2 text-white shadow-md hover:scale-110 hover:bg-white hover:text-black">
+              <div className="flex items-center justify-center text-center">
                 <img
                   src={skill.icon}
                   alt={skill.name}

@@ -17,7 +17,7 @@
 @keyframes slideRight {
   0% {
     opacity: 0;
-    transform: translatex(400px);
+    transform: translatex(40px);
   }
   100% {
     opacity: 1;
@@ -32,7 +32,7 @@
 @keyframes slideLeft {
   0% {
     opacity: 0;
-    transform: translatex(-400px);
+    transform: translatex(-40px);
   }
   100% {
     opacity: 1;
