@@ -1,0 +1,80 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.8s forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translatex(400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-right {
+  animation: slideRight 0.8s forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translatex(-400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.8s forwards;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer h2 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+footer form {
+  transition: transform 0.3s;
+}
+
+footer form:hover {
+  transform: scale(1.02);
+}
+@keyframes rocket {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  25% {
+    opacity: 0.5;
+    top: 50%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
