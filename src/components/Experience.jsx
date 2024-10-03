@@ -47,7 +47,9 @@ const company = [
     companyname: "Senchola University - Internship",
     position: "Position: Intern",
     year: "Year: 2023",
-    descriptions: ["1.  ", "2. "],
+    descriptions: [
+      "My key responsibilities included building responsive user interfaces, This hands-on experience significantly improved my technical skills in JavaScript",
+    ],
   },
 ];
 
